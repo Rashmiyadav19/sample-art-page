@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang= "en">
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content="width=device-width, initial scale=1.0">
+<link rel= "stylesheet" href="style.css" >
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">ARTOPIA</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="painting video.mp4" muted loop autoplay></video>
+    <div class="text">
+      <h2>ART IS AN ADVENTURE </h2> 
+      <h3>THAT NEVER ENDS</h3>
+      <p>
+          What do I want to say with my art?
+             Celebrate the human, the marks people make on the world.
+             Tresure the local, the small-scale, the eccentric, the ordinary:
+             whatever is made out of caring. Respect what people have built for 
+             themselves. Find the beauty in some battered old porch or cluttered, 
+             human-scale storefront, while it still stands.
+      </p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Artworks</a></li>
+      <li><a href="#">Canvas</a></li>
+      <li><a href="#">Brushes</a></li>
+      <li><a href="#">Colours</a></li>
+      <li><a href="#">Reviews</a></li>
+    </ul>
+  </div>
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
